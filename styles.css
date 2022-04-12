@@ -1,6 +1,13 @@
 .my-header {
     background-color: #4073B4;
 }
+.main-text {
+    color: #F3F3F3;
+}
+
+body {
+    background-image: url("assets/images/background.png");
+}
 
 .sub-header {
     z-index: 100;
@@ -30,15 +37,21 @@
     margin-top: 6px;
     line-height: 14px;
     font-size: 14px;
-    color: #333;
+    color: #333333;
     font-weight: bold;
     right: 75%;
     white-space: nowrap;
 }
-#github-button {
-    float: right;
-    margin-right: 55%;
 
+.buttons {
+    float: right;
+    margin-right: 50%;
+    white-space: nowrap;
+}
+#github-button {
+}
+
+#theme-button {
 }
 
 #logo {
@@ -49,4 +62,81 @@
     top: 7px;
     display: block;
     background: url(assets/images/octocat-logo.svg);
+    filter: none;
+}
+
+#main {
+    margin-right: 30%;
+}
+
+#menu {
+    width: 25%;
+    text-align: right;
+    padding: 20px;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+
+#info {
+    width: 75%;
+    background-color: #FBFBFB;
+    padding-top: 4%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 4%;
+}
+
+td {
+    border-color: black;
+    border-radius: 3px;
+}
+
+.divider {
+    position: relative;
+    margin-top: 90px;
+    height: 1px;
+}
+
+.div-transparent:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 5%;
+    right: 5%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(48,49,51), transparent);
+}
+
+.div-transparent {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+@media all and (max-width: 570px) {
+    .buttons {
+        margin-right: 30%;
+    }
+    .main {
+        width: 100%;
+        margin-right: -30%;
+    }
+}
+@media all and (max-width: 410px) {
+    .buttons {
+        margin-right: 20%;
+    }
+}
+@media all and (max-width: 360px) {
+    .button {
+        padding: 10px 5px;
+    }
+}
+@media all and (max-width: 320px) {
+    .button {
+        padding: 10px 0;
+    }
+    .buttons {
+        margin-right: 17%;
+    }
 }
